@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | [Your Name]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>My Projects</h1>
+        <p>Innovative solutions and creative ideas brought to life.</p>
+    </header>
+
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>A short description of Project 1, highlighting its impact and technology stack.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>A short description of Project 2, emphasizing its importance and challenges solved.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 [Your Name]. All Rights Reserved.
+    </footer>
+</body>
+</html>
