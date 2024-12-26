@@ -3,95 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Healthcare Management System - Applying Algorithms in Real Life">
     <title>Healthcare Management System</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">Healthcare System</div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Course Project Introduction</a></li>
-            <li><a href="reflections.html">Course Learning Reflections</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Prasanna 👋</h1>
-            <p>
-                Enthusiastic about algorithms, problem-solving, and applying technology to real-world challenges. 
-                Welcome to my Healthcare Management System project!
-            </p>
-            <button onclick="showPopup()">Learn More About Me</button>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">Healthcare System</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project Introduction</a></li>
+                <li><a href="reflections.html">Learning Reflections</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <span>🌞</span>
+                <span>🌙</span>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Our Healthcare Management System</h1>
+            <p>Leveraging algorithms to optimize healthcare solutions.</p>
         </div>
     </header>
-
-    <!-- Popup Modal -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>About Me</h2>
-            <p>
-                I am Prasanna, a passionate coder with expertise in C++, Java, Data Structures, and Algorithms. 
-                I love exploring new ways to solve real-life challenges through technology.
-            </p>
-        </div>
-    </div>
-
-    <!-- Content Section -->
-    <section class="content">
-        <h2>Project Topic: Healthcare Management System</h2>
+    <section class="intro">
+        <h2>About the Course</h2>
         <p>
-            This project demonstrates how algorithms can optimize and enhance the healthcare sector.
+            This course focuses on advanced data structures and algorithms to solve real-world problems. 
+            We explore algorithms such as Dijkstra's, Quick Sort, Priority Queue, and more, connecting them to real-life applications in healthcare management.
         </p>
-        <h3>Algorithms Used:</h3>
-        <div class="cards">
-            <!-- Card 1 -->
+    </section>
+    <section class="algorithms">
+        <h2>Algorithms Used</h2>
+        <div class="card-container">
             <div class="card">
-                <h4>Healthcare Resource Allocation</h4>
-                <ul>
-                    <li>Dijkstra's Algorithm</li>
-                    <li>Linear Search</li>
-                </ul>
+                <h3>Dijkstra’s Algorithm</h3>
+                <p>Optimizes shortest paths for resource allocation.</p>
             </div>
-            <!-- Card 2 -->
             <div class="card">
-                <h4>Emergency Medical Incident Categorization</h4>
-                <ul>
-                    <li>Rabin-Karp Algorithm</li>
-                    <li>Quick Sort</li>
-                </ul>
+                <h3>Priority Queue</h3>
+                <p>Prioritizes patient appointments effectively.</p>
             </div>
-            <!-- Card 3 -->
             <div class="card">
-                <h4>Patient Appointment Scheduling</h4>
-                <ul>
-                    <li>Priority Queue (Min-Heap)</li>
-                    <li>Bubble Sort</li>
-                </ul>
-            </div>
-            <!-- Card 4 -->
-            <div class="card">
-                <h4>Medical Supply Inventory Management</h4>
-                <ul>
-                    <li>Hashing</li>
-                    <li>Selection Sort</li>
-                </ul>
+                <h3>Hashing</h3>
+                <p>Efficiently manages medical inventory lookups.</p>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer>
-        <p>© 2024 Prasanna Anagal | <a href="https://github.com/your-github">GitHub</a> | <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a></p>
+        <p>&copy; 2024 Healthcare System | All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
