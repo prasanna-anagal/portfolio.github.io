@@ -253,3 +253,36 @@ footer {
   background-color: #003844;
   color: #FBFEF9;
 }
+
+/* Accordion Slider Styles */
+.accordion-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px; /* Spacing between items */
+  padding: 20px;
+}
+
+.slide-item {
+  background-color: #FFB238; /* Card background color */
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #003844;
+}
+
+.slide-item:hover {
+  transform: scale(1.05); /* Hover effect */
+}
+
+.slide-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.slide-item p {
+  font-size: 1rem;
+  margin: 0;
+}
