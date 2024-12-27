@@ -3,50 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | [Name]</title>
+    <title>Portfolio - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reflections.html">Reflections</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
-    <header>
-        <h1>Hello, I'm [Name]</h1>
-        <p>Enthusiastic coder and algorithm enthusiast. Welcome to my portfolio!</p>
-        <button onclick="location.href='projects.html'">Explore Projects</button>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Prasanna Anagal 👋</h1>
+            <p>I am enthusiastic, dedicated, and passionate about solving real-world problems using innovative technologies. Welcome to my portfolio!</p>
+        </div>
     </header>
 
-    <!-- Cards Section -->
-    <section>
-        <h2>Explore My Work</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>About Me</h3>
-                <p>Learn more about my journey in computer science and algorithms.</p>
-                <a href="about.html">Read More</a>
-            </div>
-            <div class="card">
-                <h3>Projects</h3>
-                <p>Check out my algorithm-based projects solving real-world problems.</p>
-                <a href="projects.html">View Projects</a>
-            </div>
-            <div class="card">
-                <h3>Contact Me</h3>
-                <p>Reach out for collaborations, queries, or just to connect!</p>
-                <a href="contact.html">Get in Touch</a>
-            </div>
-        </div>
+    <!-- Portfolio Topic Section -->
+    <section class="portfolio-topic">
+        <h2>📌 Portfolio Topic</h2>
+        <p>Healthcare Management System Project</p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 [Name] | Built with passion for algorithms.
+    <!-- Team Details Section -->
+    <section class="team-details">
+        <h2>🤝 Team Members</h2>
+        <ul>
+            <li>Name 1</li>
+            <li>Name 2</li>
+            <li>Name 3</li>
+            <li>Name 4</li>
+        </ul>
+    </section>
+
+    <!-- Social Links Section -->
+    <footer class="footer">
+        <h2>🌐 Connect with Me</h2>
+        <ul>
+            <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
+        </ul>
+        <p>© 2024 Prasanna Anagal. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
