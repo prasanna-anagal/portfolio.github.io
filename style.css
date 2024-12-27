@@ -340,3 +340,54 @@ footer {
   color: #8ecae6;
   margin: 0;
 }
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #003844;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFB238;
+}
+
+.navbar .nav-links {
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #FBFEF9;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* New Home Link Styling */
+.home-link {
+  border: 2px solid #FFB238; /* Border color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #FFB238; /* On hover, background becomes yellow */
+  color: #003844; /* Text color changes to dark blue */
+  cursor: pointer;
+  transform: scale(1.05); /* Slight scale effect */
+}
