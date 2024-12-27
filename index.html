@@ -9,48 +9,75 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="introduction.html">Introduction</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="reflections.html">Reflections</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Prasanna's Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#reflections">Reflections</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-text">
+    <header id="home" class="hero">
+        <div class="hero-content">
             <h1>Hi, I'm Prasanna Anagal 👋</h1>
-            <p>I am enthusiastic, dedicated, and passionate about solving real-world problems using innovative technologies. Welcome to my portfolio!</p>
+            <p>I am enthusiastic about solving problems and building impactful solutions.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">Explore Projects</a>
+                <a href="#introduction" class="btn">Learn More</a>
+            </div>
         </div>
     </header>
 
     <!-- Portfolio Topic Section -->
-    <section class="portfolio-topic">
-        <h2>📌 Portfolio Topic</h2>
-        <p>Healthcare Management System Project</p>
+    <section id="portfolio-topic" class="portfolio-topic">
+        <div class="container">
+            <h2>📌 Portfolio Topic</h2>
+            <p>Healthcare Management System Project</p>
+        </div>
     </section>
 
-    <!-- Team Details Section -->
-    <section class="team-details">
-        <h2>🤝 Team Members</h2>
-        <ul>
-            <li>Name 1</li>
-            <li>Name 2</li>
-            <li>Name 3</li>
-            <li>Name 4</li>
-        </ul>
+    <!-- Team Members Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>🤝 Team Members</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="avatar"></div>
+                    <h3>Name 1</h3>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"></div>
+                    <h3>Name 2</h3>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"></div>
+                    <h3>Name 3</h3>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"></div>
+                    <h3>Name 4</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Social Links Section -->
     <footer class="footer">
-        <h2>🌐 Connect with Me</h2>
-        <ul>
-            <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
-        </ul>
-        <p>© 2024 Prasanna Anagal. All Rights Reserved.</p>
+        <div class="container">
+            <h2>🌐 Connect with Me</h2>
+            <ul class="social-links">
+                <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
+            </ul>
+            <p>© 2024 Prasanna Anagal. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
