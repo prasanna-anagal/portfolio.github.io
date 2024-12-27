@@ -1,7 +1,10 @@
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', event => {
-        event.preventDefault();
-        const target = document.querySelector(event.target.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
+// Smooth Scrolling for Internal Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
+  });
 });
