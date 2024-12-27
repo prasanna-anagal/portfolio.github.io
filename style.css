@@ -10,7 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   background-color: #FBFEF9;
-  color: #023047;
+  color: #003844;
   padding-top: 60px; /* Offset for sticky navbar */
 }
 
@@ -18,7 +18,7 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #8ecae6;
+  background-color: #003844;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@ body {
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #FFB238;
 }
 
 .navbar .nav-links {
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar .nav-links li a {
-  color: #fff;
+  color: #FBFEF9;
   text-decoration: none;
   font-size: 1rem;
   padding: 5px 0;
@@ -50,13 +50,13 @@ body {
 }
 
 .navbar .nav-links li a:hover {
-  color: #fb8500;
+  color: #F25757;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #8ecae6, #219ebc);
-  color: #fff;
+  background: linear-gradient(135deg, #003844, #48ACF0);
+  color: #FBFEF9;
   text-align: center;
   padding: 100px 20px;
 }
@@ -72,9 +72,9 @@ body {
 }
 
 .cta-btn {
-  background-color: #ffb703;
+  background-color: #FFB238;
   padding: 15px 30px;
-  color: #023047;
+  color: #003844;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 5px;
@@ -82,15 +82,15 @@ body {
 }
 
 .cta-btn:hover {
-  background-color: #fb8500;
+  background-color: #F25757;
 }
 
 /* Portfolio Topic Section */
 .portfolio-topic {
   text-align: center;
   padding: 50px 20px;
-  background-color: #219ebc;
-  color: #fff;
+  background-color: #48ACF0;
+  color: #FBFEF9;
 }
 
 .projects-list ul {
@@ -105,13 +105,13 @@ body {
 }
 
 .projects-list li:hover {
-  color: #ffb703;
+  color: #FFB238;
 }
 
 /* Skills Section */
 .skills {
   padding: 50px 20px;
-  background-color: #ffb703;
+  background-color: #FFB238;
   text-align: center;
 }
 
@@ -123,10 +123,10 @@ body {
 }
 
 .skill {
-  background-color: #023047;
+  background-color: #003844;
   padding: 20px;
   border-radius: 8px;
-  color: #fff;
+  color: #FBFEF9;
   transition: transform 0.3s ease;
 }
 
@@ -137,9 +137,23 @@ body {
 /* Course Details Section */
 .course-details {
   padding: 50px 20px;
-  background-color: #fb8500;
-  color: #023047;
+  background-color: #F25757;
+  color: #FBFEF9;
   text-align: center;
+}
+
+.course-details p {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 /* Team Members Section */
@@ -155,10 +169,10 @@ body {
 }
 
 .team-member {
-  background-color: #8ecae6;
+  background-color: #48ACF0;
   padding: 20px;
   border-radius: 8px;
-  color: #fff;
+  color: #FBFEF9;
   text-align: center;
 }
 
@@ -173,8 +187,8 @@ body {
 }
 
 .social-btn {
-  background-color: #023047;
-  color: #fff;
+  background-color: #003844;
+  color: #FBFEF9;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -183,13 +197,13 @@ body {
 }
 
 .social-btn:hover {
-  background-color: #ffb703;
+  background-color: #FFB238;
 }
 
 /* Footer */
 footer {
-  background-color: #023047;
-  color: #fff;
+  background-color: #003844;
+  color: #FBFEF9;
   text-align: center;
   padding: 20px;
   margin-top: 50px;
