@@ -1,12 +1,7 @@
-function showPopup() {
-    document.getElementById('popup').style.display = 'block';
-}
-
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
-
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-}
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const target = document.querySelector(event.target.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
