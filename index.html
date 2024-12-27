@@ -1,83 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prasanna Anagal - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
+  <header>
     <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Prasanna's Portfolio</h1>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#reflections">Reflections</a></li>
-            </ul>
-        </div>
+      <div class="logo">Prasanna's Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#reflections">Reflections</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Prasanna Anagal 👋</h1>
-            <p>I am enthusiastic about solving problems and building impactful solutions.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">Explore Projects</a>
-                <a href="#introduction" class="btn">Learn More</a>
-            </div>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I’m Prasanna Anagal 👋</h1>
+      <p>I am passionate about solving problems and building impactful solutions.</p>
+      <a href="#projects" class="cta-btn">Explore Projects</a>
+    </div>
+  </section>
 
-    <!-- Portfolio Topic Section -->
-    <section id="portfolio-topic" class="portfolio-topic">
-        <div class="container">
-            <h2>📌 Portfolio Topic</h2>
-            <p>Healthcare Management System Project</p>
-        </div>
-    </section>
+  <!-- Portfolio Topic Section -->
+  <section id="portfolio-topic" class="portfolio-topic">
+    <h2>Portfolio Topic</h2>
+    <div class="projects-list">
+      <h3>Healthcare Management System Project</h3>
+      <ul>
+        <li><strong>Project 1:</strong> Healthcare Resource Allocation System</li>
+        <li><strong>Project 2:</strong> Emergency Medical Incident Categorization System</li>
+        <li><strong>Project 3:</strong> Patient Appointment Scheduling System</li>
+        <li><strong>Project 4:</strong> Medical Supply Inventory Management System</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Team Members Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <h2>🤝 Team Members</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 1</h3>
-                </div>
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 2</h3>
-                </div>
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 3</h3>
-                </div>
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 4</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h3>C Programming</h3>
+      </div>
+      <div class="skill">
+        <h3>C++</h3>
+      </div>
+      <div class="skill">
+        <h3>Data Structures & Algorithms</h3>
+      </div>
+      <div class="skill">
+        <h3>Web Development</h3>
+      </div>
+    </div>
+  </section>
 
-    <!-- Social Links Section -->
-    <footer class="footer">
-        <div class="container">
-            <h2>🌐 Connect with Me</h2>
-            <ul class="social-links">
-                <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
-            </ul>
-            <p>© 2024 Prasanna Anagal. All Rights Reserved.</p>
-        </div>
-    </footer>
+  <!-- Course and Academic Details Section -->
+  <section id="course-details" class="course-details">
+    <h2>Course Details</h2>
+    <div>
+      <p><strong>Course Name:</strong> Algorithm Problem Solving</p>
+      <p><strong>Course Code:</strong> ABCD 123</p>
+      <p><strong>Instructor:</strong> Mallikarjun Akki Sir</p>
+      <p><strong>University:</strong> KLE Technological University</p>
+    </div>
+    <h3>Personal Details</h3>
+    <p><strong>Name:</strong> Prasanna Anagal</p>
+    <p><strong>SRN:</strong> 01fe23bcs097</p>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Team Members Section -->
+  <section id="team-members" class="team-members">
+    <h2>Team Members</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <p>Prasanna 120</p>
+      </div>
+      <div class="team-member">
+        <p>Prasad 118</p>
+      </div>
+      <div class="team-member">
+        <p>Siddharth 137</p>
+      </div>
+      <div class="team-member">
+        <p>Shashank 140</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Links Section -->
+  <section class="social-links">
+    <a href="https://github.com" target="_blank" class="social-btn">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Prasanna Anagal. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
