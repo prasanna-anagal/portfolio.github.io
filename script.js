@@ -1,20 +1,9 @@
-/*
-// Smooth Scrolling for Internal Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-*/
 // Carousel functionality
 let currentIndex = 0;
 const carouselItems = document.querySelectorAll('.carousel-item');
 const totalItems = carouselItems.length;
 
+// Function to show the active item
 function showCarouselItem(index) {
   carouselItems.forEach((item, i) => {
     item.classList.remove('active');
@@ -24,14 +13,17 @@ function showCarouselItem(index) {
   });
 }
 
-document.querySelector('.carousel-next').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % totalItems;
-  showCarouselItem(currentIndex);
-});
-
-document.querySelector('.carousel-prev').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-  showCarouselItem(currentIndex);
-});
-
+// Initialize carousel with the first item active
 showCarouselItem(currentIndex);
+
+// Next Button Action
+document.querySelector('.carousel-next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % totalItems; // Go to next item, loop around
+  showCarouselItem(currentIndex);
+});
+
+// Previous Button Action
+document.querySelector('.carousel-prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Go to previous item, loop around
+  showCarouselItem(currentIndex);
+});
