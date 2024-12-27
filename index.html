@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prasanna Anagal - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
+  <header>
     <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Prasanna's Portfolio</h1>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#reflections">Reflections</a></li>
-            </ul>
-        </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#reflections">Reflections</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Prasanna Anagal 👋</h1>
-            <p>I am enthusiastic about solving problems and building impactful solutions.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">Explore Projects</a>
-                <a href="#introduction" class="btn">Learn More</a>
-            </div>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Prasanna Anagal</h1>
+      <p>I am enthusiastic about solving problems and building impactful solutions.</p>
+      <a href="#portfolio" class="scroll-to-section">Scroll Down</a>
+    </div>
+  </section>
 
-    <!-- Portfolio Topic Section -->
-    <section id="portfolio-topic" class="portfolio-topic">
-        <div class="container">
-            <h2>📌 Portfolio Topic</h2>
-            <p>Healthcare Management System Project</p>
-        </div>
-    </section>
+  <!-- Portfolio Topic -->
+  <section id="portfolio" class="portfolio-topic">
+    <h2>Healthcare Management System Project</h2>
+    <div class="portfolio-card">
+      <p>This project focuses on optimizing healthcare services using innovative algorithms.</p>
+    </div>
+  </section>
 
-    <!-- Team Members Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <h2>🤝 Team Members</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 1</h3>
-                </div>
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 2</h3>
-                </div>
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 3</h3>
-                </div>
-                <div class="team-card">
-                    <div class="avatar"></div>
-                    <h3>Name 4</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Team Members Section -->
+  <section id="team" class="team-members">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="avatar-placeholder.png" alt="Team Member">
+        <p>Name 1</p>
+      </div>
+      <div class="team-member">
+        <img src="avatar-placeholder.png" alt="Team Member">
+        <p>Name 2</p>
+      </div>
+      <div class="team-member">
+        <img src="avatar-placeholder.png" alt="Team Member">
+        <p>Name 3</p>
+      </div>
+      <div class="team-member">
+        <img src="avatar-placeholder.png" alt="Team Member">
+        <p>Name 4</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Social Links Section -->
-    <footer class="footer">
-        <div class="container">
-            <h2>🌐 Connect with Me</h2>
-            <ul class="social-links">
-                <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
-            </ul>
-            <p>© 2024 Prasanna Anagal. All Rights Reserved.</p>
-        </div>
-    </footer>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A short description of the project.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A short description of the project.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>A short description of the project.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Social Links Section -->
+  <section class="social-links">
+    <a href="https://github.com" target="_blank" class="social-btn">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Prasanna Anagal. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
