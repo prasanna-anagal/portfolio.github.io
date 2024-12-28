@@ -1,0 +1,142 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background color */
+    color: #343a40; /* Text color for general content */
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #343a40;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Accordion Styles */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.accordion-header:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Show content when radio input is checked */
+.accordion-input:checked + .accordion-header + .accordion-content {
+    display: block;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Style for links within the accordion */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Custom Styles */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Make sure accordion fits the screen width */
+.accordion-item {
+    width: 100%;
+}
+
+.accordion-header {
+    width: 100%;
+}
+
+.accordion-content {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
