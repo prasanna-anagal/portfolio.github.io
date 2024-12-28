@@ -20,12 +20,18 @@ body {
   top: 0;
   width: 100%;
   background-color: #003844; /* Dark blue background */
-  padding: 15px 20px; /* Padding for navbar */
+  padding: 10px 20px; /* Padding for navbar */
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100; /* Ensures navbar stays above other content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Body to Adjust for Fixed Navbar */
+body {
+  margin: 0; /* Reset default margin */
+  padding-top: 60px; /* Offset for navbar height to prevent overlap */
 }
 
 .navbar .logo {
@@ -42,7 +48,7 @@ body {
 }
 
 .nav-links li {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .nav-links a {
@@ -54,11 +60,11 @@ body {
 }
 
 .nav-links a:hover {
-  color: #FFB238; /* Gold color on hover */
+  color: #00bcd4; /* Gold color on hover */
 }
 
 .nav-links .active {
-  color: #FFB238; /* Gold color for active link */
+  color: #00bcd4; /* Gold color for active link */
 }
 
 /* Hero Section */
