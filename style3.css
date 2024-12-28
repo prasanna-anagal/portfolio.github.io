@@ -1,1 +1,68 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Body and Main Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #FBFEF9; /* Background color for the introduction page */
+  color: #003844;
+  padding-top: 60px; /* Offset for fixed navbar */
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  width: 100%;
+  background-color: #003844; /* Dark blue background */
+  padding: 10px 20px; /* Padding for navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; /* Ensures navbar stays above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Body to Adjust for Fixed Navbar */
+body {
+  margin: 0; /* Reset default margin */
+  padding-top: 60px; /* Offset for navbar height to prevent overlap */
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFB238; /* Gold color for the logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  color: #FBFEF9; /* White color for links */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4; /* Gold color on hover */
+}
+
+.nav-links .active {
+  color: #00bcd4; /* Gold color for active link */
+}
