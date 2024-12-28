@@ -65,6 +65,7 @@ body {
 
 .nav-links .active {
   color: #00bcd4; /* Gold color for active link */
+  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -169,9 +170,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
