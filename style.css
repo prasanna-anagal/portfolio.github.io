@@ -68,6 +68,7 @@ body {
 
 .nav-links .active {
   color: #00bcd4; /* Gold color for active link */
+  text-decoration: underline;
 }
 
 /* Hero Section */
