@@ -16,16 +16,16 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  position: fixed; /* Change to fixed */
-  top: 0; /* Ensures it stays at the top */
-  width: 100%; /* Occupy full width */
-  background-color: #003844; /* Keep the background solid */
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  width: 100%;
+  background-color: #003844; /* Same as homepage */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100; /* Ensure it appears on top of other elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+  z-index: 100; /* Ensure navbar stays above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 .navbar .logo {
@@ -34,12 +34,11 @@ body {
   color: #FFB238;
 }
 
-/* Links Inside Navigation Bar */
 .nav-links {
   list-style: none;
   display: flex;
-  margin: 0; /* Reset default margin */
-  padding: 0; /* Reset default padding */
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -53,7 +52,39 @@ body {
 }
 
 .nav-links a:hover {
-  color: #00bcd4; /* Hover effect color */
+  color: #00bcd4; /* Hover effect */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #003844, #48ACF0);
+  color: #FBFEF9;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #FFB238;
+  padding: 15px 30px;
+  color: #003844;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #F25757;
 }
 
 /* Accordion Styling */
