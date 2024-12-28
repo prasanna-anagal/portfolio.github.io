@@ -14,7 +14,7 @@ body {
   padding-top: 60px; /* Offset for sticky navbar */
 }
 
-/* Navigation Bar */
+/* Navigation Bar 
 .navbar {
   position: sticky;
   top: 0;
@@ -51,7 +51,53 @@ body {
 
 .navbar .nav-links li a:hover {
   color: #F25757;
+}*/
+/* Navigation Bar */
+.navbar {
+  position: fixed; /* Change to fixed */
+  top: 0; /* Ensures it stays at the top */
+  width: 100%; /* Occupy full width */
+  background-color: #003844; /* Keep the background solid */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100; /* Ensure it appears on top of other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
 }
+
+/* Body to Adjust for Fixed Navbar */
+body {
+  margin: 0; /* Reset default margin */
+  padding-top: 60px; /* Offset for navbar height to prevent overlap */
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFB238;
+}
+/* Links Inside Navigation Bar */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #00bcd4; /* Hover effect color */
+}
+
 
 /* Hero Section */
 .hero {
@@ -410,80 +456,4 @@ footer {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
   transition: all 0.3s ease; /* Smooth transition */
 }
-
-
-/* Introduction Section */
-.introduction {
-  padding: 50px 20px;
-  background-color: #FBFEF9; /* Matches main background */
-  text-align: center;
-  color: #003844; /* Primary text color */
-}
-
-.introduction h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #FFB238; /* Gold for emphasis */
-}
-
-.intro-text {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  color: #003844; /* Consistent with palette */
-}
-
-/* Accordion Styles */
-.accordion {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.accordion-item {
-  border: 2px solid #48ACF0; /* Border matches the blue palette */
-  border-radius: 8px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.accordion-item:hover {
-  transform: scale(1.02); /* Slight hover effect */
-}
-
-.accordion-header {
-  background-color: #003844; /* Dark background */
-  color: #FBFEF9; /* Light text */
-  font-size: 1.5rem;
-  padding: 15px 20px;
-  cursor: pointer;
-  text-align: left;
-  border: none;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-.accordion-header:hover {
-  background-color: #FFB238; /* Gold hover effect */
-  color: #003844; /* Inverse text color */
-}
-
-.accordion-content {
-  background-color: #FBFEF9; /* Light background */
-  color: #003844; /* Dark text */
-  font-size: 1.2rem;
-  padding: 20px;
-  display: none; /* Hidden by default */
-  border-top: 1px solid #48ACF0; /* Separator border */
-  text-align: left;
-}
-
-.accordion-content p {
-  margin: 0; /* Remove default margin for clean look */
-}
-
-/* Expanded Accordion State */
-.accordion-item.active .accordion-content {
-  display: block; /* Show content when active */
-}
-
+<nav id="navbar" class="navbar">
