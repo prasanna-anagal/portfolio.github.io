@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-/* Body and Main Styles (Changed Body Background) */
+/* Body and Main Styles */
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #E0F7FA; /* Changed background color for introduction page */
+  background-color: #E0F7FA; /* Background color for the introduction page */
   color: #003844;
-  padding-top: 60px; /* Offset for sticky navbar */
+  padding-top: 60px; /* Offset for fixed navbar */
 }
 
 /* Navigation Bar */
@@ -19,19 +19,19 @@ body {
   position: fixed; /* Fixed at the top */
   top: 0;
   width: 100%;
-  background-color: #003844; /* Same as homepage */
-  padding: 10px 20px;
+  background-color: #003844; /* Dark blue background */
+  padding: 15px 20px; /* Padding for navbar */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100; /* Ensure navbar stays above other content */
+  z-index: 100; /* Ensures navbar stays above other content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #FFB238;
+  color: #FFB238; /* Gold color for the logo */
 }
 
 .nav-links {
@@ -42,17 +42,23 @@ body {
 }
 
 .nav-links li {
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 .nav-links a {
-  color: white;
+  color: #FBFEF9; /* White color for links */
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #00bcd4; /* Hover effect */
+  color: #FFB238; /* Gold color on hover */
+}
+
+.nav-links .active {
+  color: #FFB238; /* Gold color for active link */
 }
 
 /* Hero Section */
@@ -87,7 +93,7 @@ body {
   background-color: #F25757;
 }
 
-/* Accordion Styling */
+/* Accordion Styles */
 .accordion-item {
   margin-bottom: 10px;
 }
@@ -97,7 +103,7 @@ body {
 }
 
 .accordion-header {
-  background-color: #003844; /* Keep header background consistent with navbar */
+  background-color: #003844;
   color: white;
   padding: 15px;
   font-size: 18px;
@@ -106,11 +112,10 @@ body {
   text-align: left;
   width: 100%;
   display: block;
-  box-sizing: border-box;
 }
 
 .accordion-header:hover {
-  background-color: #FFB238; /* On hover, change to gold color */
+  background-color: #FFB238;
 }
 
 .accordion-content {
@@ -119,15 +124,13 @@ body {
   background-color: #FBFEF9;
   border-radius: 5px;
   border-top: 1px solid #ccc;
-  box-sizing: border-box;
 }
 
-/* Show content when radio input is checked */
 .accordion-input:checked + .accordion-header + .accordion-content {
   display: block;
 }
 
-/* Adjust other container and elements */
+/* Container for General Layout */
 .container {
   padding: 20px;
   max-width: 1200px;
@@ -146,7 +149,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* Lists and Links in Accordion */
+/* Styling for Lists and Links in Accordion */
 ul {
   padding-left: 20px;
 }
