@@ -1,86 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Details</title>
-  <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="style3.css"> <!-- Link to the CSS file for the project page -->
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">Prasanna's Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="introduction.html">Introduction</a></li>
-      <li><a href="project.html" class="active">Projects</a></li>
-      <li><a href="reflection.html">Reflections</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Project Details</h1>
-    <p>Exploring innovative solutions for urban mobility and sustainability.</p>
-  </section>
-
-  <!-- Accordion Section -->
-  <div class="container">
-    <h2>Explore Project Insights</h2>
-    <!-- Problem Space -->
-    <div class="accordion-item">
-      <input type="checkbox" id="problem-space" class="accordion-input">
-      <label for="problem-space" class="accordion-header">1. Problem Space</label>
-      <div class="accordion-content">
-        <p>
-          The problem space focuses on optimizing urban mobility and infrastructure in growing cities.
-          It involves analyzing inefficiencies in traffic flow, public transportation, and the environmental impact of city logistics.
-        </p>
-        <ul>
-          <li>Inefficient traffic patterns due to outdated signaling systems.</li>
-          <li>Underutilization of public transit due to poor accessibility and scheduling.</li>
-          <li>High carbon emissions caused by poorly optimized logistics networks.</li>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="logo">Prasanna's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="project.html" class="active">Projects</a></li>
+            <li><a href="reflection.html">Reflections</a></li>
         </ul>
-      </div>
-    </div>
+    </nav>
 
-    <!-- Problem Definition and Team -->
-    <div class="accordion-item">
-      <input type="checkbox" id="problem-definition" class="accordion-input">
-      <label for="problem-definition" class="accordion-header">2. Problem Definition and Team</label>
-      <div class="accordion-content">
-        <h3>Problem Definition:</h3>
-        <p>Designing a data-driven solution to improve urban mobility by integrating real-time traffic management.</p>
-        <h3>Team Details:</h3>
-        <ul>
-          <li><strong>Alex (Team Lead):</strong> Oversees project strategy.</li>
-          <li><strong>Jamie (Data Scientist):</strong> Builds predictive models and optimization algorithms.</li>
-          <li><strong>Riley (Software Engineer):</strong> Develops a scalable platform.</li>
-          <li><strong>Taylor (Urban Planner):</strong> Provides city planning insights.</li>
-          <li><strong>Jordan (Sustainability Expert):</strong> Ensures sustainability practices.</li>
-        </ul>
-      </div>
-    </div>
+    <!-- Main Content Area -->
+    <div class="container">
+        <h1>Project Details</h1>
 
-    <!-- Business Cases -->
-    <div class="accordion-item">
-      <input type="checkbox" id="business-cases" class="accordion-input">
-      <label for="business-cases" class="accordion-header">3. Business Cases</label>
-      <div class="accordion-content">
-        <ul>
-          <li><strong>Alex:</strong> Develops partnerships with municipal governments.</li>
-          <li><strong>Jamie:</strong> Predictive modeling to reduce commute times by 20%.</li>
-          <li><strong>Riley:</strong> Builds an app for real-time traffic updates.</li>
-          <li><strong>Taylor:</strong> Proposes new bus routes to underserved areas.</li>
-          <li><strong>Jordan:</strong> Designs logistics routes to reduce emissions by 15%.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+        <!-- Accordion -->
+        <div class="accordion">
+            <!-- Problem Space -->
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="problem-space" class="accordion-input" checked>
+                <label for="problem-space" class="accordion-header">1. Provide the details of the problem space and how it was arrived at.</label>
+                <div class="accordion-content">
+                    The problem space focuses on optimizing urban mobility and infrastructure in growing cities. 
+                    Key findings include:
+                    <ul>
+                        <li>Inefficient traffic patterns due to outdated signaling systems.</li>
+                        <li>Underutilization of public transit due to poor accessibility and scheduling.</li>
+                        <li>High carbon emissions caused by poorly optimized logistics networks.</li>
+                    </ul>
+                    Smart city designs incorporating IoT sensors, AI-driven traffic management, and multimodal transportation systems were explored.
+                </div>
+            </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Prasanna's Portfolio. All rights reserved.</p>
-  </footer>
+            <!-- Problem Definition and Team -->
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="problem-definition" class="accordion-input">
+                <label for="problem-definition" class="accordion-header">2. Provide problem definition and team details.</label>
+                <div class="accordion-content">
+                    <h3>Problem Definition:</h3>
+                    <p>Our project focuses on improving urban mobility through real-time traffic management, optimized public transit, and sustainable logistics.</p>
+                    <h3>Team Details:</h3>
+                    <ul>
+                        <li><strong>Alex:</strong> Team lead, oversees strategy.</li>
+                        <li><strong>Jamie:</strong> Data scientist, creates predictive models.</li>
+                        <li><strong>Riley:</strong> Software engineer, develops platform integrations.</li>
+                        <li><strong>Taylor:</strong> Urban planner, provides insights into city layouts.</li>
+                        <li><strong>Jordan:</strong> Sustainability expert, ensures green practices.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Business Cases -->
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="business-cases" class="accordion-input">
+                <label for="business-cases" class="accordion-header">3. Provide business cases that each member is working on.</label>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Alex:</strong> Develops partnerships with municipalities.</li>
+                        <li><strong>Jamie:</strong> Predictive modeling to reduce commute times by 20%.</li>
+                        <li><strong>Riley:</strong> Designs a real-time app for commuters.</li>
+                        <li><strong>Taylor:</strong> Proposes transit hubs in underserved areas.</li>
+                        <li><strong>Jordan:</strong> Designs routes reducing emissions by 15%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
