@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Introduction</title>
-    <link rel="stylesheet" href="style3.css"> <!-- Link to your existing CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-    <!-- Navigation Bar (Same as homepage) -->
-    <nav id="navbar" class="navbar">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
     <div class="logo">Prasanna's Portfolio</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="introduction.html">Introduction</a></li>
-      <li><a href="project.html"class="active">Projects</a></li>
+      <li><a href="project.html" class="active">Projects</a></li>
       <li><a href="reflection.html">Reflections</a></li>
     </ul>
   </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Project Details</h1>
+    <p>Exploring innovative solutions for urban mobility and sustainability.</p>
+  </section>
+
+  <!-- Accordion Section -->
+  <div class="container">
+    <h2>Explore Project Insights</h2>
+    <!-- Problem Space -->
+    <div class="accordion-item">
+      <input type="checkbox" id="problem-space" class="accordion-input">
+      <label for="problem-space" class="accordion-header">1. Problem Space</label>
+      <div class="accordion-content">
+        <p>
+          The problem space focuses on optimizing urban mobility and infrastructure in growing cities.
+          It involves analyzing inefficiencies in traffic flow, public transportation, and the environmental impact of city logistics.
+        </p>
+        <ul>
+          <li>Inefficient traffic patterns due to outdated signaling systems.</li>
+          <li>Underutilization of public transit due to poor accessibility and scheduling.</li>
+          <li>High carbon emissions caused by poorly optimized logistics networks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Problem Definition and Team -->
+    <div class="accordion-item">
+      <input type="checkbox" id="problem-definition" class="accordion-input">
+      <label for="problem-definition" class="accordion-header">2. Problem Definition and Team</label>
+      <div class="accordion-content">
+        <h3>Problem Definition:</h3>
+        <p>Designing a data-driven solution to improve urban mobility by integrating real-time traffic management.</p>
+        <h3>Team Details:</h3>
+        <ul>
+          <li><strong>Alex (Team Lead):</strong> Oversees project strategy.</li>
+          <li><strong>Jamie (Data Scientist):</strong> Builds predictive models and optimization algorithms.</li>
+          <li><strong>Riley (Software Engineer):</strong> Develops a scalable platform.</li>
+          <li><strong>Taylor (Urban Planner):</strong> Provides city planning insights.</li>
+          <li><strong>Jordan (Sustainability Expert):</strong> Ensures sustainability practices.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Business Cases -->
+    <div class="accordion-item">
+      <input type="checkbox" id="business-cases" class="accordion-input">
+      <label for="business-cases" class="accordion-header">3. Business Cases</label>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Alex:</strong> Develops partnerships with municipal governments.</li>
+          <li><strong>Jamie:</strong> Predictive modeling to reduce commute times by 20%.</li>
+          <li><strong>Riley:</strong> Builds an app for real-time traffic updates.</li>
+          <li><strong>Taylor:</strong> Proposes new bus routes to underserved areas.</li>
+          <li><strong>Jordan:</strong> Designs logistics routes to reduce emissions by 15%.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Prasanna's Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
