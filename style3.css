@@ -5,46 +5,37 @@
   box-sizing: border-box;
 }
 
-/* Body and Main Styles */
+/* Body Styles */
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #FBFEF9; /* Background color for the introduction page */
+  background-color: #E0F7FA; /* Light blue background for project page */
   color: #003844;
   padding-top: 60px; /* Offset for fixed navbar */
 }
 
 /* Navigation Bar */
 .navbar {
-  position: fixed; /* Fixed at the top */
+  position: fixed;
   top: 0;
   width: 100%;
-  background-color: #003844; /* Dark blue background */
-  padding: 10px 20px; /* Padding for navbar */
+  background-color: #003844; /* Dark blue */
+  color: #FBFEF9;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  z-index: 100; /* Ensures navbar stays above other content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
-
-/* Body to Adjust for Fixed Navbar */
-body {
-  margin: 0; /* Reset default margin */
-  padding-top: 60px; /* Offset for navbar height to prevent overlap */
+  padding: 10px 20px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #FFB238; /* Gold color for the logo */
+  color: #FFB238; /* Gold color */
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 .nav-links li {
@@ -52,17 +43,70 @@ body {
 }
 
 .nav-links a {
-  color: #FBFEF9; /* White color for links */
+  color: #FBFEF9; /* White */
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #00bcd4; /* Gold color on hover */
+.nav-links a:hover, .nav-links .active {
+  color: #FFB238; /* Gold on hover or active */
 }
 
-.nav-links .active {
-  color: #00bcd4; /* Gold color for active link */
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #003844, #48ACF0);
+  color: #FBFEF9;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Accordion Styles */
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-input {
+  display: none;
+}
+
+.accordion-header {
+  background-color: #003844;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.accordion-header:hover {
+  background-color: #FFB238;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #FBFEF9;
+  border-radius: 5px;
+  border-top: 1px solid #ccc;
+}
+
+.accordion-input:checked + .accordion-header + .accordion-content {
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #003844;
+  color: #FBFEF9;
 }
