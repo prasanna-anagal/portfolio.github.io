@@ -1,150 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reflection</title>
-  <link rel="stylesheet" href="style4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reflections</title>
+    <link rel="stylesheet" href="style4.css"> <!-- Link to your existing CSS file -->
 </head>
 <body>
-  <div class="container">
-    <div class="accordion">
-      
-      <!-- Question 1 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q1">
-        <label for="q1">1. What are the kinds of problems we see in nature?</label>
-        <div class="answer">
-          <p>Iteration: Repeatedly applying a set of operations until a condition is met, such as modeling planetary motion or predicting stock prices over time.</p>
-          <p>Recursion: Breaking down problems into smaller instances of the same problem, such as the Tower of Hanoi or computing fractals.</p>
-          <p>Backtracking: Systematically exploring possibilities, backtracking when a solution path fails, used in puzzles like Sudoku or solving the N-Queens problem.</p>
-        </div>
-      </div>
-      
-      <!-- Question 2 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q2">
-        <label for="q2">2. What is space and time efficiency? Why are they important? Explain the different class of problems and orders of growth.</label>
-        <div class="answer">
-          <p>Space Efficiency: Refers to minimizing memory usage during algorithm execution.</p>
-          <p>Time Efficiency: Measures the speed of algorithm execution.</p>
-          <p>Important for handling large datasets and ensuring scalability.</p>
-          <p>Classes of Problems:</p>
-          <ul>
-            <li>P (Polynomial time): Solvable efficiently.</li>
-            <li>NP (Nondeterministic Polynomial): Verifiable efficiently but not necessarily solvable quickly.</li>
-            <li>NP-Complete: Problems that are in NP and as hard as any problem in NP.</li>
-          </ul>
-          <p>Orders of Growth:</p>
-          <ul>
-            <li>Constant O(1), Logarithmic O(logn), Linear O(n), Quadratic O(n²), etc.</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Navigation Bar (Same as homepage) -->
+    <nav id="navbar" class="navbar">
+        <div class="logo">Prasanna's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="reflection.html" class="active">Reflections</a></li>
+        </ul>
+    </nav>
 
-      <!-- Question 3 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q3">
-        <label for="q3">3. Takeaway from different design principles (Chapter 2)</label>
-        <div class="answer">
-          <ul>
-            <li>Divide and Conquer: Splitting a problem into subproblems, solving them independently, and combining results (e.g., Merge Sort).</li>
-            <li>Dynamic Programming: Solving problems by storing solutions to overlapping subproblems (e.g., Fibonacci sequence).</li>
-            <li>Greedy Algorithms: Making locally optimal choices at each step (e.g., Huffman Coding).</li>
-            <li>Abstraction: Simplifying complex problems by focusing on key details.</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Main Content Area -->
+    <div class="container">
+        <h1>Reflections on Data Structures and Algorithms</h1>
 
-      <!-- Question 4 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q4">
-        <label for="q4">4. The hierarchical data and how different tree data structures solve and optimize over problem scenarios</label>
-        <div class="answer">
-          <ul>
-            <li>Tree: Simplifies hierarchical relationships (e.g., organizational charts).</li>
-            <li>Binary Search Tree (BST): Enables efficient searching and sorting.</li>
-            <li>AVL Tree: Self-balancing BST that ensures O(logn) operations.</li>
-            <li>2-3 Tree: Balances multi-way search trees for even distribution.</li>
-            <li>Red-Black Tree: Guarantees balanced operations with coloring rules.</li>
-            <li>Heap: Used for priority-based operations (e.g., Dijkstra’s algorithm).</li>
-            <li>Trie: Optimized for string searches and prefix matching.</li>
-          </ul>
-        </div>
-      </div>
+        <!-- Accordion for Reflection Questions -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item1" class="accordion-input" checked>
+                <label for="item1" class="accordion-header">1. What are the kinds of problems we see in nature?</label>
+                <div class="accordion-content">
+                    <p>Iteration: Repeatedly applying a set of operations until a condition is met, such as modeling planetary motion or predicting stock prices over time.</p>
+                    <p>Recursion: Breaking down problems into smaller instances of the same problem, such as the Tower of Hanoi or computing fractals.</p>
+                    <p>Backtracking: Systematically exploring possibilities, backtracking when a solution path fails, used in puzzles like Sudoku or solving the N-Queens problem.</p>
+                </div>
+            </div>
 
-      <!-- Question 5 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q5">
-        <label for="q5">5. The need for array query algorithms and their implications</label>
-        <div class="answer">
-          <p><b>Applications:</b></p>
-          <ul>
-            <li>Range Sum Queries: Stock market analysis.</li>
-            <li>Range Minimum Queries: Tournament scheduling.</li>
-            <li>Prefix Sums: Computing cumulative metrics.</li>
-          </ul>
-          <p><b>Principles:</b> Optimizing query responses via preprocessing. Examples include Segment Trees and Fenwick Trees.</p>
-        </div>
-      </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item2" class="accordion-input">
+                <label for="item2" class="accordion-header">2. What is space and time efficiency? Why are they important? Explain the different class of problems and orders of growth.</label>
+                <div class="accordion-content">
+                    <p><strong>Space Efficiency:</strong> Refers to minimizing memory usage during algorithm execution.</p>
+                    <p><strong>Time Efficiency:</strong> Measures the speed of algorithm execution.</p>
+                    <p>Important for handling large datasets and ensuring scalability.</p>
+                    <p><strong>Classes of Problems:</strong></p>
+                    <ul>
+                        <li>P (Polynomial time): Solvable efficiently.</li>
+                        <li>NP (Nondeterministic Polynomial): Verifiable efficiently but not necessarily solvable quickly.</li>
+                        <li>NP-Complete: Problems that are in NP and as hard as any problem in NP.</li>
+                    </ul>
+                    <p><strong>Orders of Growth:</strong></p>
+                    <ul>
+                        <li>Constant <code>O(1)</code></li>
+                        <li>Logarithmic <code>O(log n)</code></li>
+                        <li>Linear <code>O(n)</code></li>
+                        <li>Quadratic <code>O(n^2)</code></li>
+                    </ul>
+                </div>
+            </div>
 
-      <!-- Question 6 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q6">
-        <label for="q6">6. Differentiate between trees and graphs and their traversals. Applications of each.</label>
-        <div class="answer">
-          <p><b>Trees:</b></p>
-          <ul>
-            <li>Hierarchical structure, single path between nodes.</li>
-            <li>Traversals: In-order, Pre-order, Post-order.</li>
-            <li>Applications: File systems, decision trees.</li>
-          </ul>
-          <p><b>Graphs:</b></p>
-          <ul>
-            <li>Network structure, multiple paths possible.</li>
-            <li>Traversals: BFS, DFS.</li>
-            <li>Applications: Social networks, network routing.</li>
-          </ul>
-        </div>
-      </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item3" class="accordion-input">
+                <label for="item3" class="accordion-header">3. Takeaway from different design principles (Chapter 2)</label>
+                <div class="accordion-content">
+                    <p><strong>Divide and Conquer:</strong> Splitting a problem into subproblems, solving them independently, and combining results (e.g., Merge Sort).</p>
+                    <p><strong>Dynamic Programming:</strong> Solving problems by storing solutions to overlapping subproblems (e.g., Fibonacci sequence).</p>
+                    <p><strong>Greedy Algorithms:</strong> Making locally optimal choices at each step (e.g., Huffman Coding).</p>
+                    <p><strong>Abstraction:</strong> Simplifying complex problems by focusing on key details.</p>
+                </div>
+            </div>
 
-      <!-- Question 7 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q7">
-        <label for="q7">7. Sorting and searching algorithms and their connection to the real world</label>
-        <div class="answer">
-          <p><b>Sorting:</b> Organizing data for efficient use (e.g., Quick Sort in database queries).</p>
-          <p><b>Searching:</b> Retrieving information (e.g., Binary Search in applications like dictionary lookup).</p>
-          <p><b>Real-world Applications:</b> Data analysis, e-commerce search engines.</p>
-        </div>
-      </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item4" class="accordion-input">
+                <label for="item4" class="accordion-header">4. The hierarchical data and how different tree data structures solve and optimize over problem scenarios</label>
+                <div class="accordion-content">
+                    <p><strong>Tree:</strong> Simplifies hierarchical relationships (e.g., organizational charts).</p>
+                    <p><strong>Binary Search Tree (BST):</strong> Enables efficient searching and sorting.</p>
+                    <p><strong>AVL Tree:</strong> Self-balancing BST that ensures <code>O(log n)</code> operations.</p>
+                    <p><strong>2-3 Tree:</strong> Balances multi-way search trees for even distribution.</p>
+                    <p><strong>Red-Black Tree:</strong> Guarantees balanced operations with coloring rules.</p>
+                    <p><strong>Heap:</strong> Used for priority-based operations (e.g., Dijkstra’s algorithm).</p>
+                    <p><strong>Trie:</strong> Optimized for string searches and prefix matching.</p>
+                </div>
+            </div>
 
-      <!-- Question 8 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q8">
-        <label for="q8">8. Importance of graph algorithms with respect to spanning trees and shortest paths</label>
-        <div class="answer">
-          <p><b>Spanning Trees:</b> Applications: Network design, minimizing costs (e.g., Kruskal’s and Prim’s algorithms).</p>
-          <p><b>Shortest Paths:</b> Applications: GPS systems, delivery route optimization (e.g., Dijkstra’s and Bellman-Ford algorithms).</p>
-        </div>
-      </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item5" class="accordion-input">
+                <label for="item5" class="accordion-header">5. The need for array query algorithms and their implications</label>
+                <div class="accordion-content">
+                    <p><strong>Applications:</strong></p>
+                    <ul>
+                        <li>Range Sum Queries: Stock market analysis.</li>
+                        <li>Range Minimum Queries: Tournament scheduling.</li>
+                        <li>Prefix Sums: Computing cumulative metrics.</li>
+                    </ul>
+                    <p><strong>Principles:</strong></p>
+                    <p>Optimizing query responses via preprocessing.</p>
+                    <p>Examples include Segment Trees and Fenwick Trees.</p>
+                </div>
+            </div>
 
-      <!-- Question 9 -->
-      <div class="accordion-item">
-        <input type="checkbox" id="q9">
-        <label for="q9">9. Discuss different studied algorithm design techniques</label>
-        <div class="answer">
-          <ul>
-            <li>Divide and Conquer: Focuses on breaking problems into smaller subproblems.</li>
-            <li>Dynamic Programming: Optimizes by storing solutions of overlapping subproblems.</li>
-            <li>Greedy Algorithms: Makes immediate choices with the hope of global optimization.</li>
-            <li>Backtracking: Systematically explores possibilities, backtracking when needed.</li>
-            <li>Brute Force: Tries all possibilities, generally less efficient but simpler.</li>
-          </ul>
-        </div>
-      </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item6" class="accordion-input">
+                <label for="item6" class="accordion-header">6. Differentiate between trees and graphs and their traversals. Applications of each.</label>
+                <div class="accordion-content">
+                    <p><strong>Trees:</strong> Hierarchical structure, single path between nodes.</p>
+                    <p><strong>Traversals:</strong> In-order, Pre-order, Post-order.</p>
+                    <p><strong>Applications:</strong> File systems, decision trees.</p>
+                    <p><strong>Graphs:</strong> Network structure, multiple paths possible.</p>
+                    <p><strong>Traversals:</strong> BFS, DFS.</p>
+                    <p><strong>Applications:</strong> Social networks, network routing.</p>
+                </div>
+            </div>
 
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item7" class="accordion-input">
+                <label for="item7" class="accordion-header">7. Sorting and searching algorithms and their connection to the real world</label>
+                <div class="accordion-content">
+                    <p><strong>Sorting:</strong> Organizing data for efficient use (e.g., Quick Sort in database queries).</p>
+                    <p><strong>Searching:</strong> Retrieving information (e.g., Binary Search in applications like dictionary lookup).</p>
+                    <p><strong>Real-world Applications:</strong> Data analysis, e-commerce search engines.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item8" class="accordion-input">
+                <label for="item8" class="accordion-header">8. Importance of graph algorithms with respect to spanning trees and shortest paths</label>
+                <div class="accordion-content">
+                    <p><strong>Spanning Trees:</strong></p>
+                    <ul>
+                        <li>Applications: Network design, minimizing costs (e.g., Kruskal’s and Prim’s algorithms).</li>
+                    </ul>
+                    <p><strong>Shortest Paths:</strong></p>
+                    <ul>
+                        <li>Applications: GPS systems, delivery route optimization (e.g., Dijkstra’s and Bellman-Ford algorithms).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item9" class="accordion-input">
+                <label for="item9" class="accordion-header">9. Discuss different studied algorithm design techniques</label>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Divide and Conquer: Focuses on breaking problems into smaller subproblems.</li>
+                        <li>Dynamic Programming: Optimizes by storing solutions of overlapping subproblems.</li>
+                        <li>Greedy Algorithms: Makes immediate choices with the hope of global optimization.</li>
+                        <li>Backtracking: Systematically explores possibilities, backtracking when needed.</li>
+                        <li>Brute Force: Tries all possibilities, generally less efficient but simpler.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
