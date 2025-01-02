@@ -5,37 +5,40 @@
   box-sizing: border-box;
 }
 
-/* Body Styles */
+/* Body and Main Styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #E0F7FA; /* Light blue background for project page */
+  line-height: 1.6;
+  background-color: #F0F4F8; /* Light grey-blue background for project page */
   color: #003844;
   padding-top: 60px; /* Offset for fixed navbar */
 }
 
 /* Navigation Bar */
 .navbar {
-  position: fixed;
+  position: fixed; /* Fixed at the top */
   top: 0;
   width: 100%;
-  background-color: #003844; /* Dark blue */
-  color: #FBFEF9;
+  background-color: #003844; /* Dark blue background */
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
   z-index: 100;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #FFB238; /* Gold color */
+  color: #FFB238; /* Gold color for the logo */
 }
 
 .nav-links {
-  display: flex;
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -43,30 +46,19 @@ body {
 }
 
 .nav-links a {
-  color: #FBFEF9; /* White */
+  color: #FBFEF9; /* White for links */
   text-decoration: none;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover, .nav-links .active {
-  color: #FFB238; /* Gold on hover or active */
+.nav-links a:hover {
+  color: #00BCD4; /* Cyan color on hover */
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, #003844, #48ACF0);
-  color: #FBFEF9;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
+.nav-links .active {
+  color: #00BCD4; /* Cyan for active link */
 }
 
 /* Accordion Styles */
@@ -85,6 +77,9 @@ body {
   font-size: 18px;
   cursor: pointer;
   border-radius: 5px;
+  text-align: left;
+  width: 100%;
+  display: block;
 }
 
 .accordion-header:hover {
@@ -103,10 +98,50 @@ body {
   display: block;
 }
 
-/* Footer */
-footer {
+/* Container for General Layout */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #003844;
   text-align: center;
-  padding: 10px 20px;
-  background-color: #003844;
-  color: #FBFEF9;
+  margin-bottom: 30px;
+}
+
+/* Styling for Lists in Accordion */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
