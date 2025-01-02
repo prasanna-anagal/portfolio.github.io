@@ -192,3 +192,12 @@ a {
     font-size: 2rem;
   }
 }
+
+.container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555; /* Subtle gray */
+    margin-bottom: 20px;
+}
+
+
