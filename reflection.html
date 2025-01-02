@@ -4,17 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Introduction</title>
-    <link rel="stylesheet" href="style4.css"> <!-- Link to your existing CSS file -->
+    <title>Reflections</title>
+    <link rel="stylesheet" href="style4.css"> <!-- Link to the CSS file for reflections -->
 </head>
 <body>
-    <!-- Navigation Bar (Same as homepage) -->
+    <!-- Navigation Bar -->
     <nav id="navbar" class="navbar">
-    <div class="logo">Prasanna's Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="introduction.html">Introduction</a></li>
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="reflection.html"class="active">Reflections</a></li>
-    </ul>
-  </nav>
+        <div class="logo">Prasanna's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="reflection.html" class="active">Reflections</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <h1>Reflections on Algorithms and Data Structures</h1>
+
+        <!-- Instruction Message -->
+        <p style="text-align: center; font-size: 1.2rem; color: #555; margin-bottom: 20px;">
+            Click on a question to expand and see the answer.
+        </p>
+
+        <!-- Accordion -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item1" class="accordion-input" checked>
+                <label for="item1" class="accordion-header">1. What are the kinds of problems we see in nature?</label>
+                <div class="accordion-content">
+                    Iteration: Repeatedly applying a set of operations until a condition is met, such as modeling planetary motion or predicting stock prices over time.
+                    <br>Recursion: Breaking down problems into smaller instances of the same problem, such as the Tower of Hanoi or computing fractals.
+                    <br>Backtracking: Systematically exploring possibilities, backtracking when a solution path fails, used in puzzles like Sudoku or solving the N-Queens problem.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item2" class="accordion-input">
+                <label for="item2" class="accordion-header">2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth.</label>
+                <div class="accordion-content">
+                    <strong>Space Efficiency:</strong> Refers to minimizing memory usage during algorithm execution.
+                    <br><strong>Time Efficiency:</strong> Measures the speed of algorithm execution.
+                    <br>Important for handling large datasets and ensuring scalability.
+                    <br><strong>Classes of Problems:</strong>
+                    <ul>
+                        <li>P (Polynomial time): Solvable efficiently.</li>
+                        <li>NP (Nondeterministic Polynomial): Verifiable efficiently but not necessarily solvable quickly.</li>
+                        <li>NP-Complete: Problems that are in NP and as hard as any problem in NP.</li>
+                    </ul>
+                    <strong>Orders of Growth:</strong>
+                    Constant \(O(1)\), Logarithmic \(O(\log n)\), Linear \(O(n)\), Quadratic \(O(n^2)\), etc.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item3" class="accordion-input">
+                <label for="item3" class="accordion-header">3. Takeaway from different design principles (Chapter 2)</label>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Divide and Conquer:</strong> Splitting a problem into subproblems, solving them independently, and combining results (e.g., Merge Sort).</li>
+                        <li><strong>Dynamic Programming:</strong> Solving problems by storing solutions to overlapping subproblems (e.g., Fibonacci sequence).</li>
+                        <li><strong>Greedy Algorithms:</strong> Making locally optimal choices at each step (e.g., Huffman Coding).</li>
+                        <li><strong>Abstraction:</strong> Simplifying complex problems by focusing on key details.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Add remaining questions in the same pattern -->
+        </div>
+    </div>
+</body>
+</html>
