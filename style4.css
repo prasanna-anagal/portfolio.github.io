@@ -182,3 +182,64 @@ a {
     color: #555; /* Subtle gray */
     margin-bottom: 20px;
 }
+
+
+/* General table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Table header styles */
+th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Table cell styles */
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Style for odd and even rows for better readability */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Container styling */
+.accordion-content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+h3, h4 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* List styling */
+ul {
+    margin-left: 20px;
+}
+
+/* Improve spacing */
+h4 {
+    margin-top: 30px;
+}
+
