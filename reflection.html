@@ -95,14 +95,18 @@
                 <input type="radio" name="accordion" id="item4" class="accordion-input">
                 <label for="item4" class="accordion-header">4. The hierarchical data and how different tree data structures solve and optimize over problem scenarios</label>
                 <div class="accordion-content">
-                    <p><strong>Tree:</strong> Simplifies hierarchical relationships (e.g., organizational charts).</p>
-                    <p><strong>Binary Search Tree (BST):</strong> Enables efficient searching and sorting.</p>
-                    <p><strong>AVL Tree:</strong> Self-balancing BST that ensures <code>O(log n)</code> operations.</p>
-                    <p><strong>2-3 Tree:</strong> Balances multi-way search trees for even distribution.</p>
-                    <p><strong>Red-Black Tree:</strong> Guarantees balanced operations with coloring rules.</p>
-                    <p><strong>Heap:</strong> Used for priority-based operations (e.g., Dijkstra’s algorithm).</p>
-                    <p><strong>Trie:</strong> Optimized for string searches and prefix matching.</p>
-                </div>
+    Hierarchical data represents a structure where elements are organized in a tree-like format, with a single root node and multiple levels of child nodes beneath it. These data structures are useful for modeling relationships like family trees, organizational charts, and file systems. Various tree data structures optimize specific scenarios by offering different strengths in terms of efficiency, flexibility, and balance.
+    <ul>
+        <li><strong>Tree:</strong> A general tree structure allows nodes to have multiple children. It is used in scenarios where elements naturally have more than two child nodes. It is flexible but doesn't enforce strict ordering or balancing, which can lead to inefficiencies in certain operations like searching or inserting.</li>
+        <li><strong>Binary Search Tree (BST):</strong> A binary tree where each node has at most two children and the left child is less than the parent, while the right child is greater. BSTs are ideal for searching, insertion, and deletion operations but can become unbalanced, leading to inefficient operations in the worst case (O(n) time complexity).</li>
+        <li><strong>AVL Tree:</strong> An AVL (Adelson-Velsky and Landis) tree is a self-balancing binary search tree where the difference in heights of left and right subtrees is no more than one. This balancing ensures that operations like search, insertion, and deletion remain efficient (O(log n) time complexity), even in the worst case, solving the problem of unbalanced BSTs.</li>
+        <li><strong>2-3 Tree:</strong> A 2-3 tree is a balanced search tree in which every node can contain either two or three children. It guarantees that all leaves are at the same level, ensuring balanced operations. 2-3 trees are useful for scenarios requiring balanced search and efficient insertions, such as databases or file indexing systems.</li>
+        <li><strong>Red-Black Tree:</strong> A red-black tree is a self-balancing binary search tree with an additional set of properties that ensures the tree remains balanced. The balance of the tree is maintained by enforcing color properties and restructuring operations during insertions and deletions. Red-Black trees provide efficient operations (O(log n) time complexity) and are widely used in databases and memory management systems.</li>
+        <li><strong>Heap:</strong> A heap is a complete binary tree used for efficiently implementing priority queues. In a min-heap, the parent node is always smaller than its children, and in a max-heap, the parent node is always larger. Heaps optimize operations like finding the minimum or maximum element in O(1) time and performing insertion or deletion in O(log n) time. They are often used in algorithms like Dijkstra’s shortest path and heap sort.</li>
+        <li><strong>Trie:</strong> A trie is a tree-like data structure used for storing a set of strings, where each node represents a character in a string. Tries are particularly useful for searching and autocomplete operations, as they allow for efficient prefix-based searches in O(m) time, where m is the length of the string. Tries optimize search times in scenarios involving large sets of strings, like dictionary lookups or spell checkers.</li>
+    </ul>
+</div>
+
             </div>
 
             <div class="accordion-item">
