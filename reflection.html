@@ -76,11 +76,20 @@
                 <input type="radio" name="accordion" id="item3" class="accordion-input">
                 <label for="item3" class="accordion-header">3. Takeaway from different design principles (Chapter 2)</label>
                 <div class="accordion-content">
-                    <p><strong>Divide and Conquer:</strong> Splitting a problem into subproblems, solving them independently, and combining results (e.g., Merge Sort).</p>
-                    <p><strong>Dynamic Programming:</strong> Solving problems by storing solutions to overlapping subproblems (e.g., Fibonacci sequence).</p>
-                    <p><strong>Greedy Algorithms:</strong> Making locally optimal choices at each step (e.g., Huffman Coding).</p>
-                    <p><strong>Abstraction:</strong> Simplifying complex problems by focusing on key details.</p>
-                </div>
+    <ul>
+        <li><strong>Takeaways from Design Principles:</strong></li>
+        <li><strong>Brute Force:</strong> Brute force solves problems by exhaustively trying all possible solutions. It's a straightforward approach but can be very inefficient, especially for large inputs. For example, linear search checks every element in the array until it finds the target or finishes checking all elements, making it O(n) in time complexity.</li>
+        <li><strong>Decrease and Conquer:</strong> This technique involves breaking down a problem into smaller instances of the same problem and solving them in a systematic manner. Binary search is a classic example where the problem size is reduced by half in each step, improving search time compared to brute force (O(log n) vs O(n)).</li>
+        <li><strong>Divide and Conquer:</strong> Divide and conquer splits the problem into independent subproblems, solves them separately, and then combines their results. Merge Sort is a prime example, which divides an array into two halves, recursively sorts each half, and merges them back together, giving an efficient time complexity of O(n log n).</li>
+        <li><strong>Transform and Conquer:</strong> This approach transforms the problem into a more manageable form. For instance, Heap Sort builds a heap structure from the input array and sorts it by repeatedly extracting the maximum element, which optimizes the sorting process compared to simpler algorithms like selection sort.</li>
+        <li><strong>Dynamic Programming:</strong> Dynamic programming solves problems by breaking them into smaller overlapping subproblems and storing their solutions to avoid recalculating the same thing multiple times. A classic example is the Fibonacci sequence, where using a simple recursive approach would be slow, but memoization stores previously computed values, improving efficiency.</li>
+        <li><strong>Greedy Technique:</strong> Greedy algorithms work by making the best possible decision at each step, aiming for an overall optimal solution. Dijkstra’s Algorithm is a good example where, at each step, the shortest unvisited node is chosen, eventually resulting in the shortest path from the source node in a graph.</li>
+        <li><strong>Space and Time Trade-off:</strong> This technique aims to optimize both time and space. Memoization is a prime example, where intermediate results are stored in a cache (using extra space) to avoid redundant calculations, which ultimately saves time in recursive algorithms like those for the Fibonacci sequence.</li>
+        <li><strong>Randomized Algorithms:</strong> These algorithms rely on randomization to improve performance and handle certain problems more efficiently. Quick Sort is a typical example, where a random pivot element is chosen in each iteration, making the algorithm faster on average and reducing the worst-case performance.</li>
+        <li><strong>Backtracking:</strong> Backtracking is a trial-and-error method that solves problems incrementally, undoing decisions when a solution path does not work out. It’s widely used in constraint satisfaction problems like the N-Queens problem, where you place queens on a chessboard and backtrack if a queen is placed in an invalid position.</li>
+    </ul>
+</div>
+
             </div>
 
             <div class="accordion-item">
