@@ -155,118 +155,135 @@
                 <input type="radio" name="accordion" id="item6" class="accordion-input">
                 <label for="item6" class="accordion-header">6. Differentiate between trees and graphs and their traversals. Applications of each.</label>
                 <div class="accordion-content">
-    <h3>Difference Between Trees and Graphs</h3>
-    <table>
-        <tr>
-            <th>Feature</th>
-            <th>Tree</th>
-            <th>Graph</th>
-        </tr>
-        <tr>
-            <td><strong>Definition</strong></td>
-            <td>A tree is a connected, acyclic graph with one root and a hierarchical structure.</td>
-            <td>A graph is a collection of nodes connected by edges. It can be cyclic or acyclic.</td>
-        </tr>
-        <tr>
-            <td><strong>Edges</strong></td>
-            <td>A tree has exactly n-1 edges for n nodes.</td>
-            <td>A graph can have any number of edges, and can have cycles.</td>
-        </tr>
-        <tr>
-            <td><strong>Connectivity</strong></td>
-            <td>Always connected.</td>
-            <td>Can be connected or disconnected.</td>
-        </tr>
-        <tr>
-            <td><strong>Cycle</strong></td>
-            <td>No cycles allowed.</td>
-            <td>Can contain cycles.</td>
-        </tr>
-        <tr>
-            <td><strong>Path</strong></td>
-            <td>Exactly one path between any two nodes.</td>
-            <td>Multiple paths can exist between two nodes.</td>
-        </tr>
-        <tr>
-            <td><strong>Root</strong></td>
-            <td>Has a root node.</td>
-            <td>No root, can have any node as a starting point.</td>
-        </tr>
-        <tr>
-            <td><strong>Hierarchical Structure</strong></td>
-            <td>Strict hierarchy with parent-child relationship.</td>
-            <td>No strict hierarchy, can represent complex relationships.</td>
-        </tr>
-    </table>
+        
+        <h3>Difference Between Trees and Graphs</h3>
+        <!-- Table for Difference -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Tree</th>
+                    <th>Graph</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Definition</strong></td>
+                    <td>A tree is a connected, acyclic graph with one root and a hierarchical structure.</td>
+                    <td>A graph is a collection of nodes connected by edges. It can be cyclic or acyclic.</td>
+                </tr>
+                <tr>
+                    <td><strong>Edges</strong></td>
+                    <td>A tree has exactly n-1 edges for n nodes.</td>
+                    <td>A graph can have any number of edges and can have cycles.</td>
+                </tr>
+                <tr>
+                    <td><strong>Connectivity</strong></td>
+                    <td>Always connected.</td>
+                    <td>Can be connected or disconnected.</td>
+                </tr>
+                <tr>
+                    <td><strong>Cycle</strong></td>
+                    <td>No cycles allowed.</td>
+                    <td>Can contain cycles.</td>
+                </tr>
+                <tr>
+                    <td><strong>Path</strong></td>
+                    <td>Exactly one path between any two nodes.</td>
+                    <td>Multiple paths can exist between two nodes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Root</strong></td>
+                    <td>Has a root node.</td>
+                    <td>No root, can have any node as a starting point.</td>
+                </tr>
+                <tr>
+                    <td><strong>Hierarchical Structure</strong></td>
+                    <td>Strict hierarchy with parent-child relationship.</td>
+                    <td>No strict hierarchy, can represent complex relationships.</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <h3>Traversal Methods for Trees and Graphs</h3>
+        <h3>Traversal Methods for Trees and Graphs</h3>
 
-    <h4>Tree Traversal Methods</h4>
-    <table>
-        <tr>
-            <th>Traversal Type</th>
-            <th>Description</th>
-            <th>Application</th>
-        </tr>
-        <tr>
-            <td><strong>In-order Traversal</strong></td>
-            <td>Visit left subtree, root, and then right subtree.</td>
-            <td>Used in binary search trees (BST) to retrieve nodes in sorted order.</td>
-        </tr>
-        <tr>
-            <td><strong>Pre-order Traversal</strong></td>
-            <td>Visit root, then left and right subtrees.</td>
-            <td>Used in expression tree evaluation or when cloning a tree.</td>
-        </tr>
-        <tr>
-            <td><strong>Post-order Traversal</strong></td>
-            <td>Visit left, right subtrees, and then root.</td>
-            <td>Used for deleting a tree, calculating postfix expressions.</td>
-        </tr>
-        <tr>
-            <td><strong>Level-order Traversal</strong></td>
-            <td>Visit nodes level by level, using a queue.</td>
-            <td>Typically used to print nodes level by level or breadth-first search (BFS).</td>
-        </tr>
-    </table>
+        <!-- Tree Traversal Methods -->
+        <h4>Tree Traversal Methods</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Traversal Type</th>
+                    <th>Description</th>
+                    <th>Application</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>In-order Traversal</td>
+                    <td>Visit left subtree, root, and then right subtree.</td>
+                    <td>Used in binary search trees (BST) to retrieve nodes in sorted order.</td>
+                </tr>
+                <tr>
+                    <td>Pre-order Traversal</td>
+                    <td>Visit root, then left and right subtrees.</td>
+                    <td>Used in expression tree evaluation or when cloning a tree.</td>
+                </tr>
+                <tr>
+                    <td>Post-order Traversal</td>
+                    <td>Visit left, right subtrees, and then root.</td>
+                    <td>Used for deleting a tree, calculating postfix expressions.</td>
+                </tr>
+                <tr>
+                    <td>Level-order Traversal</td>
+                    <td>Visit nodes level by level, using a queue.</td>
+                    <td>Typically used to print nodes level by level or breadth-first search (BFS).</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <h4>Graph Traversal Methods</h4>
-    <table>
-        <tr>
-            <th>Traversal Type</th>
-            <th>Description</th>
-            <th>Application</th>
-        </tr>
-        <tr>
-            <td><strong>Depth-First Search (DFS)</strong></td>
-            <td>Explore as deep as possible along each branch before backtracking.</td>
-            <td>Used in cycle detection, connected components, and topological sorting.</td>
-        </tr>
-        <tr>
-            <td><strong>Breadth-First Search (BFS)</strong></td>
-            <td>Explore nodes level by level using a queue.</td>
-            <td>Used in shortest path algorithms (unweighted graphs), network flow, and web crawling.</td>
-        </tr>
-    </table>
+        <!-- Graph Traversal Methods -->
+        <h4>Graph Traversal Methods</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Traversal Type</th>
+                    <th>Description</th>
+                    <th>Application</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Depth-First Search (DFS)</td>
+                    <td>Explore as deep as possible along each branch before backtracking.</td>
+                    <td>Used in cycle detection, connected components, and topological sorting.</td>
+                </tr>
+                <tr>
+                    <td>Breadth-First Search (BFS)</td>
+                    <td>Explore nodes level by level using a queue.</td>
+                    <td>Used in shortest path algorithms (unweighted graphs), network flow, and web crawling.</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <h3>Applications of Trees</h3>
-    <ul>
-        <li><strong>Binary Search Tree (BST):</strong> Efficient search, insertion, and deletion of data. Used in databases, search engines.</li>
-        <li><strong>Heap:</strong> Implements priority queues for min-heap or max-heap. Used in job scheduling and Dijkstra’s algorithm.</li>
-        <li><strong>Trie (Prefix Tree):</strong> Efficient string matching and prefix-based searching. Used in autocomplete systems and dictionary implementations.</li>
-        <li><strong>Expression Tree:</strong> Represents and evaluates mathematical expressions. Used in compiler optimization and expression evaluation.</li>
-        <li><strong>Decision Tree:</strong> Used for classification and regression in machine learning. Applied in predictive analytics and classification tasks.</li>
-    </ul>
+        <h3>Applications of Trees</h3>
+        <ul>
+            <li>Binary Search Tree (BST): Efficient search, insertion, and deletion of data. Used in databases, search engines.</li>
+            <li>Heap: Implements priority queues for min-heap or max-heap. Used in job scheduling and Dijkstra’s algorithm.</li>
+            <li>Trie (Prefix Tree): Efficient string matching and prefix-based searching. Used in autocomplete systems and dictionary implementations.</li>
+            <li>Expression Tree: Represents and evaluates mathematical expressions. Used in compiler optimization and expression evaluation.</li>
+            <li>Decision Tree: Used for classification and regression in machine learning. Applied in predictive analytics and classification tasks.</li>
+        </ul>
 
-    <h3>Applications of Graphs</h3>
-    <ul>
-        <li><strong>Social Network Graph:</strong> Represents relationships between users. Applied in social media and friend recommendation systems.</li>
-        <li><strong>Shortest Path Algorithms:</strong> Used to find the shortest path in weighted graphs. Applied in GPS navigation systems and network routing.</li>
-        <li><strong>Network Flow Problems:</strong> Solves max flow problems in network design. Applied in data packet routing and telecommunications.</li>
-        <li><strong>Web Crawling:</strong> Traverses and analyzes linked web pages. Used in search engines and web page ranking (e.g., PageRank).</li>
-        <li><strong>Cycle Detection:</strong> Detects cycles in graphs. Applied in deadlock detection in operating systems and dependency graphs in build systems.</li>
-    </ul>
-</div>
+        <h3>Applications of Graphs</h3>
+        <ul>
+            <li>Social Network Graph: Represents relationships between users. Applied in social media and friend recommendation systems.</li>
+            <li>Shortest Path Algorithms: Used to find the shortest path in weighted graphs. Applied in GPS navigation systems and network routing.</li>
+            <li>Network Flow Problems: Solves max flow problems in network design. Applied in data packet routing and telecommunications.</li>
+            <li>Web Crawling: Traverses and analyzes linked web pages. Used in search engines and web page ranking (e.g., PageRank).</li>
+            <li>Cycle Detection: Detects cycles in graphs. Applied in deadlock detection in operating systems and dependency graphs in build systems.</li>
+        </ul>
+
+    </div>
 
             </div>
 
