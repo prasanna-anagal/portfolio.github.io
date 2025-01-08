@@ -158,50 +158,37 @@ h1 {
     margin-bottom: 20px;
 }
 
-body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+.team-table {
+    width: 100%; /* Makes the table span the full width of its container */
+    border-collapse: collapse; /* Ensures no gaps between borders */
+    margin-top: 20px; /* Adds spacing above the table */
+    font-size: 16px; /* Adjusts the font size */
+}
 
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-        }
+.team-table th, .team-table td {
+    border: 1px solid #ddd; /* Adds a light border to all cells */
+    padding: 10px; /* Adds padding for better readability */
+    text-align: center; /* Centers the text in all cells */
+}
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
+.team-table th {
+    background-color: #f4f4f4; /* Light gray background for header */
+    color: #333; /* Dark text color for contrast */
+    font-weight: bold; /* Emphasizes header row */
+}
 
-        .accordion-content {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
+.team-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row color for even rows */
+}
 
-        .team-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+.team-table tr:hover {
+    background-color: #f1f1f1; /* Highlight effect on hover */
+}
 
-        .team-table th, .team-table td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .team-table th {
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .team-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .team-table tr:hover {
-            background-color: #f1f1f1;
-        }
+.team-table caption {
+    caption-side: top; /* Places the table caption above the table */
+    margin-bottom: 10px; /* Adds spacing between caption and table */
+    font-weight: bold; /* Makes the caption bold */
+    font-size: 18px; /* Slightly larger font for caption */
+    color: #2c3e50; /* Text color for caption */
+}
