@@ -157,3 +157,51 @@ h1 {
     color: #555; /* Subtle gray */
     margin-bottom: 20px;
 }
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .accordion-content {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .team-table th, .team-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .team-table th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .team-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .team-table tr:hover {
+            background-color: #f1f1f1;
+        }
