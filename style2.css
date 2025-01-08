@@ -28,12 +28,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
-/* Body to Adjust for Fixed Navbar */
-body {
-  margin: 0; /* Reset default margin */
-  padding-top: 60px; /* Offset for navbar height to prevent overlap */
-}
-
 .navbar .logo {
   font-size: 1.8rem;
   font-weight: bold;
@@ -192,12 +186,3 @@ a {
     font-size: 2rem;
   }
 }
-
-.container p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #555; /* Subtle gray */
-    margin-bottom: 20px;
-}
-
-
